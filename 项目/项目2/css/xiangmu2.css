@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: calc(100*100vw/600);
+}
+body{
+    font-size: 0.24rem;
+    background-color: #f5f5f5;
+}
+/* header */
+.header{
+    height: 0.65rem;
+    background-color: #e61414;
+}
+.header .a1{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 0.65rem;
+    width: 1.47rem;
+    color: #fff;
+    margin: 0 0.06rem;
+    text-align: center;
+    line-height: 0.65rem;
+    border-bottom: 0.04rem solid #fff;
+}
+.header .a1 .s1{
+    font-size: 0.42rem;
+}
+.header .s2 a{
+    color: #fff;
+    margin-top: 0;
+}
+.header .jt{
+    height: 0.65rem;
+    width: 0.64rem;
+    float: right;
+    text-align: center;
+    line-height: 0.65rem;
+}
+.header .jt span{
+    color: #fff;
+    font-size: 0.38rem;
+}
+/* 轮播图 */
+.lbp{
+    position: relative;
+}
+.picture{
+    background-color:blue;
+    width: 36rem;
+    height: 2.1rem;;
+    overflow: hidden;
+    position: absolute;
+    animation: myMove 30s infinite;
+}
+.picture img{
+    width: 6rem;
+    height: 2.1rem;
+}
+@keyframes myMove {
+    0%,5%{
+        left: 0;
+    }
+    12%,24%{
+        left:-6rem;
+    }
+    31%,43%{
+        left:-12rem;
+    }
+    50%,62%{
+        left: -18rem;
+    }
+    69%,81%{
+        left: -24rem;
+    }
+    89%,100%{
+        left:-30rem;
+    }
+}
+/* 推荐 */
+.hot-recomand{
+    height: 0.48rem;
+    color: #666;
+    background-color: #f5f5f5;
+    margin-top: 2.1rem;
+    text-align: center;
+    line-height: 0.48rem;
+    position: relative;
+}
+.hot-recomand::before{
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    left: 0;
+    top:50%;
+}
+.hot-recomand::after{
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    right: 0;
+    top:50%;
+}
+/* 内容 */
+.content1{
+    width: 100%;
+    height: 4.54rem;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    margin-top: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.content1 .d1,.content1 .d2{
+    width: 2.96rem;background-color: #fff;
+    position: relative;
+}
+.content1 img{
+    width: 100%;
+}
+.c1{
+    height: 0.6rem;
+    font-size: 0.20rem;
+    line-height: 0.34rem;
+    box-sizing: border-box;
+    padding: 0 0.14rem 0 0.1rem;
+}
+.c2{
+    color: #ccc;
+    box-sizing: border-box;
+    padding-left: 0.1rem;
+    font-size: 0.19rem;
+    margin: 0.1rem 0;
+}
+.c3{
+    color:#26A96D;
+    font-size: 0.3rem;
+}
+.c3 span{
+    font-size: 0.19rem;
+}
+.d1 .merits{
+    position: absolute;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 0.1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 0.18rem;
+    left:0.22rem;
+    top:2.56rem;
+}
+.d1 .jiantou{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
+    border-style: solid;
+    border-width: 0.1rem;
+    left:0.018rem;
+    top:2.586rem;
+    overflow: hidden;
+}
+.d2 .merits{
+    position: absolute;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 0.1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 0.18rem;
+    left:0.22rem;
+    top:2.56rem;
+}
+.d2 .jiantou{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
+    border-style: solid;
+    border-width: 0.1rem;
+    left:0.018rem;
+    top:2.586rem;
+    overflow: hidden;
+}
